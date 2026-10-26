@@ -351,7 +351,7 @@
 .btn-ghost {background:transparent;color:#637569;border:1px solid #e5e3d9;}
 .btn-ghost:hover {background:#f3f1e8;color:#284b38;}
 .btn-danger {background:#fff1ec;color:#a64332;border:1px solid #f0d5cc;}
-.icon-btn {width:36px;height:36px;border-radius:9px;display:grid;place-items:center;color:#748176;transition:background .16s,color .16s;}
+.icon-btn {width:40px;height:40px;border-radius:9px;display:grid;place-items:center;color:#748176;transition:background .16s,color .16s;}
 .icon-btn:hover {background:#f2efe5;color:#29553b;}
 .field-label {display:block;font-size:11px;font-weight:700;color:#57685c;margin:0 0 6px;}
 .field {width:100%;min-height:42px;border:1px solid #dedfd3;background:#fffefb;border-radius:8px;padding:9px 11px;color:#263d30;font-size:13px;outline:none;transition:border .16s,box-shadow .16s;}
@@ -385,7 +385,7 @@
 .notice {border-radius:10px;background:#edf2e8;color:#4e674d;padding:12px 14px;font-size:11px;line-height:1.5;}
 .tip-mark {border-left:3px solid #ecc84d;padding-left:13px;}
 @media(max-width:900px){.sidebar{width:218px;flex-basis:218px}.page-wrap{padding-top:27px}}
-@media(max-width:700px){.sidebar{display:none}.topbar{height:61px;padding:0 16px}.page-wrap{padding:25px 16px 96px}.mobile-nav{display:flex;position:fixed;z-index:30;bottom:0;left:0;right:0;height:68px;background:#214b38;padding:6px 5px calc(6px + env(safe-area-inset-bottom));justify-content:flex-start;overflow-x:auto;box-shadow:0 -5px 18px #16372820;scrollbar-width:none}.mobile-nav::-webkit-scrollbar{display:none}.mobile-nav a{display:flex;flex:0 0 73px;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:#d6e0d4;font-size:9px;font-weight:600;text-align:center}.mobile-nav a.active{color:#f4d365}.mobile-nav svg{width:18px;height:18px}.page-title{font-size:34px}.metric-value{font-size:25px}}
+@media(max-width:700px){.sidebar{display:none}.topbar{height:61px;padding:0 16px}.page-wrap{padding:25px 16px 96px}.mobile-nav{display:flex;position:fixed;z-index:30;bottom:0;left:0;right:0;height:68px;background:#214b38;padding:6px 5px calc(6px + env(safe-area-inset-bottom));justify-content:space-between;overflow:hidden;box-shadow:0 -5px 18px #16372820}.mobile-nav a{display:flex;flex:1 1 0;min-width:0;align-items:center;justify-content:center;flex-direction:column;gap:4px;color:#d6e0d4;font-size:clamp(7px,2vw,9px);font-weight:600;text-align:center;white-space:nowrap}.mobile-nav a.active{color:#f4d365}.mobile-nav svg{width:17px;height:17px;flex:0 0 17px}.page-title{font-size:34px}.metric-value{font-size:25px}}
 
 /**
  * Using the elevate system.
