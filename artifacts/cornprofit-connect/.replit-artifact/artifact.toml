@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "CornProfit Connect"
+description = "A mobile-friendly farm management app for small-scale corn farmers in the Philippines to plan costs, track farm records and sales, review clearly labeled sample supply prices, organize group selling leads, and export reports."
+version = "1.0.0"
+id = "artifacts/cornprofit-connect"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 18917
+
+[services.development]
+run = "pnpm --filter @workspace/cornprofit-connect run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/cornprofit-connect", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/cornprofit-connect/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "18917"
+BASE_PATH = "/"
