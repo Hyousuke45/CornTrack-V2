@@ -1,0 +1,45 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "services": {
+    "app": {
+      "root": ".",
+      "framework": "vite"
+    },
+    "api-server": {
+      "root": "artifacts/api-server",
+      "framework": "express"
+    },
+    "cornprofit-connect": {
+      "root": "artifacts/cornprofit-connect",
+      "framework": "vite"
+    },
+    "mockup-sandbox": {
+      "root": "artifacts/mockup-sandbox",
+      "framework": "vite"
+    },
+    "cornprofit_connect": {
+      "root": "File Provider Storage/CORN TRACK CODING/cornprofit_connect",
+      "runtime": "python"
+    },
+    "cornprofit_connect2": {
+      "root": "File Provider Storage/CORN TRACK CODING/cornprofit_connect 2",
+      "runtime": "python"
+    },
+    "cornprofit_connect3": {
+      "root": "File Provider Storage/CORN TRACK CODING/cornprofit_connect 3",
+      "runtime": "python"
+    },
+    "cornprofit_connect4": {
+      "root": "File Provider Storage/CORN TRACK CODING/cornprofit_connect 4",
+      "runtime": "python"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": {
+        "service": "app"
+      }
+    }
+  ]
+}
